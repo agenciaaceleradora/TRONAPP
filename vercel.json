@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "functions": {
+    "api/webhook.ts": {
+      "memory": 1024,
+      "maxDuration": 10
+    }
+  },
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/$1" }
+  ],
+  "env": {
+    "WEBHOOK_TOKEN": "ec782bdfa66606f6ebd583bbbe9c0450"
+  }
+}
